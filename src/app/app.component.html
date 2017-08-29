@@ -1,3 +1,19 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Github search</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="well">
+    <input type="text" class="form-control" placeholder="type in username..." [(ngModel)]="username" name="username" />
+  </div>
+</div>
+
+<br />
+
+<div class="container">
+  <app-profile username="{{ username }}"></app-profile>
+</div>
