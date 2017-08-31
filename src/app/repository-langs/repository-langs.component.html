@@ -1,0 +1,7 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+      <div *ngFor="let lang of languages">
+          <div class="fullCircle" [style.backgroundColor]="lang.pctColor"></div> {{ lang.name }} - {{ lang.pct | number:'1.2-2' }}%
+      </div>
+    </div>
+  </div>

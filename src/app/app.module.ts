@@ -8,12 +8,17 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { GithubService } from './github.service';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { RepositoryLangsComponent } from './repository-langs/repository-langs.component';
+
+import { KeysPipe } from './keys-pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    RepositoriesComponent
+    RepositoriesComponent,
+    RepositoryLangsComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,

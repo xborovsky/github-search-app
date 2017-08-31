@@ -2,10 +2,13 @@
     <div class="panel-heading">Repositories</div>
     <div class="panel-body">
       <div class="row" *ngFor="let repository of repositories">
-        <div class="col-sm-12 col-md-10">
+        <div class="col-sm-12 col-md-7">
           <h3><a href="{{ repository.html_url }}">{{ repository.name }}</a></h3>
           <p *ngIf="repository.description">{{ repository.description }}</p>
           <p *ngIf="!repository.description" style="color: gray;">no description</p>
+        </div>
+        <div class="col-sm-12 col-md-3">
+          <app-repository-langs username="{{ username || defaultUser }}" repositoryName="{{ repository.name }}"></app-repository-langs>
         </div>
         <div class="col-sm-12 col-md-2">
             <span class="label label-default">{{ repository.watchers }} Watchers</span>

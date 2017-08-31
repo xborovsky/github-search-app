@@ -11,7 +11,7 @@ export class RepositoriesComponent implements OnInit, OnChanges {
   @Input()
   username:string;
   repositories:any[];
-  private defaultUser = 'xborovsky';
+  defaultUser = 'xborovsky';
 
   constructor(private githubService:GithubService) { }
 

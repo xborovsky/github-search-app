@@ -1,0 +1,9 @@
+.fullCircle {
+    width: 15px;
+    height:15px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 5px;
+}

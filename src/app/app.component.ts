@@ -9,6 +9,4 @@ export class AppComponent {
   
   username:string;
 
-  
-
 }
